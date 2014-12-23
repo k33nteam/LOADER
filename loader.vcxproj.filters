@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ae33b42e-0551-4e01-914b-5f1a0a3da6cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel">
+      <UniqueIdentifier>{08c320a0-0a39-4dc5-ad41-1df7dba92157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\user">
+      <UniqueIdentifier>{6f14ddd6-f881-4af6-bdc5-00944d968707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\user\imports">
+      <UniqueIdentifier>{38ac4cba-c764-4ae6-b332-77806faeb56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\user\imports\amd64">
+      <UniqueIdentifier>{3ba656a5-a75b-480b-b367-5f1429b89e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel\imports">
+      <UniqueIdentifier>{0745b953-21c3-4441-b80e-e8a812152bb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel\imports\amd64">
+      <UniqueIdentifier>{91c2264a-7b9e-4479-b7b8-b76e68073993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel\imports\defs">
+      <UniqueIdentifier>{57925fd6-5e4d-41e5-9bef-e0a78837931e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\user\imports\defs">
+      <UniqueIdentifier>{f674f546-22a3-4d66-b47d-f538e2dc3daf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\user\libc.cpp">
+      <Filter>Source Files\user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\libc.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\internals\Image.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\Allocator.cpp">
+      <Filter>Source Files\user</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\Resolver.cpp">
+      <Filter>Source Files\user</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\utils\GlobalDllProxy.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\Allocator.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExecAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kernel\Resolver.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\base\Singleton.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Module.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\KernelModule.hpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\UserModule.hpp">
+      <Filter>Source Files\user</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\base\ObjDisposer.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Loader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\Allocator.h">
+      <Filter>Source Files\user</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\internals\Image.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DynamicClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Resolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\utils\GlobalDllProxy.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\imports\ImportDeclaration.h">
+      <Filter>Source Files\user\imports</Filter>
+    </ClInclude>
+    <ClInclude Include="src\user\imports\ImportWrapper.hpp">
+      <Filter>Source Files\user\imports</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\Allocator.h">
+      <Filter>Source Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\imports\ImportDeclaration.h">
+      <Filter>Source Files\kernel\imports</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kernel\imports\ImportWrapper.hpp">
+      <Filter>Source Files\kernel\imports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\internals\QuerySystemInfo.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\undoc\SystemInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ExecAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\kernel\imports\krn_imports.asm">
+      <Filter>Source Files\kernel\imports\amd64</Filter>
+    </MASM>
+    <MASM Include="src\user\imports\usr_imports.asm">
+      <Filter>Source Files\user\imports\amd64</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\kernel\imports\imports.ii">
+      <Filter>Source Files\kernel\imports\defs</Filter>
+    </None>
+    <None Include="src\user\imports\imports.ii">
+      <Filter>Source Files\user\imports\defs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

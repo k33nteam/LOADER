@@ -1,0 +1,1 @@
+Error	278	error LNK2001: unresolved external symbol NtQuerySystemInformation	C:\ArtOfArchitecture\cc_shellcode\cc_shellcode\loader.lib(Resolver.obj)	cc_shellcode

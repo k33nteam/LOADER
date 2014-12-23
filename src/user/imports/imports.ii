@@ -1,0 +1,11 @@
+Error	24	error LNK2001: unresolved external symbol _vsnprintf	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(heap.obj)	cc_shellcode
+Error	26	error LNK2001: unresolved external symbol _RtlUnicodeToMultiByteN@20	D:\cve\cc-shellcoding\cc_shellcode\libcntpr.lib(_wctomb.obj)	cc_shellcode
+Error	18	error LNK2001: unresolved external symbol _RtlRaiseException@4	D:\cve\cc-shellcoding\cc_shellcode\libcntpr.lib(fpexcept.obj)	cc_shellcode
+Error	25	error LNK2001: unresolved external symbol __imp__OutputDebugStringA@4	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(heap.obj)	cc_shellcode
+Error	21	error LNK2001: unresolved external symbol __imp__HeapReAlloc@16	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(heap.obj)	cc_shellcode
+Error	23	error LNK2001: unresolved external symbol __imp__HeapFree@12	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(heap.obj)	cc_shellcode
+Error	22	error LNK2001: unresolved external symbol __imp__HeapAlloc@12	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(heap.obj)	cc_shellcode
+Error	16	error LNK2001: unresolved external symbol __imp__GetProcessHeap@0	D:\cve\cc-shellcoding\cc_shellcode\main.obj	cc_shellcode
+Error	17	error LNK2001: unresolved external symbol __imp__GetModuleHandleW@4	D:\cve\cc-shellcoding\cc_shellcode\main.obj	cc_shellcode
+Error	15	error LNK2001: unresolved external symbol __imp__GetCommandLineW@0	D:\cve\cc-shellcoding\cc_shellcode\main.obj	cc_shellcode
+Error	23	error LNK2001: unresolved external symbol _strnicmp	D:\cve\cc-shellcoding\cc_shellcode\main.obj	cc_shellcode

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8EB9E40F-F3CD-469E-83FF-78C7FB2E6DBE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>loader</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN32;_X86_;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(WindowsSDKDir)\include\km\;$(SolutionDir)/boost/libs/integer/include;$(SolutionDir)/boost/libs/functional/include;$(SolutionDir)/boost/libs/detail/include;$(SolutionDir)/boost/libs/move/include;$(SolutionDir)/boost/libs/intrusive/include;$(SolutionDir)/boost/libs/static_assert/include;$(SolutionDir)/boost/libs/preprocessor/include;$(SolutionDir)/boost/libs/mpl/include;$(SolutionDir)/boost/libs/type_traits/include;$(SolutionDir)/boost/libs/exception/include;$(SolutionDir)/boost/libs/utility/include;$(SolutionDir)/boost/libs/config/include;$(SolutionDir)/boost/libs/assert/include;$(SolutionDir)/boost/libs/smart_ptr/include;$(SolutionDir)/boost/</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CallingConvention>StdCall</CallingConvention>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderFile />
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ExportNamedFunctions>
+      </ExportNamedFunctions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN64;_AMD64_;AMD64;;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(WindowsSDKDir)\include\km\;$(SolutionDir)/boost/libs/integer/include;$(SolutionDir)/boost/libs/functional/include;$(SolutionDir)/boost/libs/detail/include;$(SolutionDir)/boost/libs/move/include;$(SolutionDir)/boost/libs/intrusive/include;$(SolutionDir)/boost/libs/static_assert/include;$(SolutionDir)/boost/libs/preprocessor/include;$(SolutionDir)/boost/libs/mpl/include;$(SolutionDir)/boost/libs/type_traits/include;$(SolutionDir)/boost/libs/exception/include;$(SolutionDir)/boost/libs/utility/include;$(SolutionDir)/boost/libs/config/include;$(SolutionDir)/boost/libs/assert/include;$(SolutionDir)/boost/libs/smart_ptr/include;$(SolutionDir)/boost/;</AdditionalIncludeDirectories>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\internals\Image.cpp" />
+    <ClCompile Include="..\Common\utils\GlobalDllProxy.cpp" />
+    <ClCompile Include="src\ExecAllocator.cpp" />
+    <ClCompile Include="src\kernel\Allocator.cpp" />
+    <ClCompile Include="src\kernel\libc.cpp" />
+    <ClCompile Include="src\kernel\Resolver.cpp">
+      <FileType>CppCode</FileType>
+    </ClCompile>
+    <ClCompile Include="src\user\Allocator.cpp" />
+    <ClCompile Include="src\user\libc.cpp" />
+    <ClCompile Include="src\user\Resolver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\base\ObjDisposer.hpp" />
+    <ClInclude Include="..\Common\base\Singleton.hpp" />
+    <ClInclude Include="..\Common\internals\Image.h" />
+    <ClInclude Include="..\Common\internals\QuerySystemInfo.hpp" />
+    <ClInclude Include="..\Common\undoc\SystemInfo.h" />
+    <ClInclude Include="..\Common\utils\GlobalDllProxy.h" />
+    <ClInclude Include="src\ExecAllocator.h" />
+    <ClInclude Include="src\DynamicClass.h" />
+    <ClInclude Include="src\kernel\Allocator.h" />
+    <ClInclude Include="src\kernel\imports\ImportDeclaration.h" />
+    <ClInclude Include="src\kernel\imports\ImportWrapper.hpp" />
+    <ClInclude Include="src\kernel\KernelModule.hpp" />
+    <ClInclude Include="src\Loader.hpp" />
+    <ClInclude Include="src\Module.hpp" />
+    <ClInclude Include="src\Resolver.h" />
+    <ClInclude Include="src\user\Allocator.h" />
+    <ClInclude Include="src\user\imports\ImportDeclaration.h" />
+    <ClInclude Include="src\user\imports\ImportWrapper.hpp" />
+    <ClInclude Include="src\user\UserModule.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libc\libc.vcxproj">
+      <Project>{6b090b01-76a1-4521-902d-6011fe9aa4ed}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\kernel\imports\krn_imports.asm" />
+    <MASM Include="src\user\imports\usr_imports.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\kernel\imports\imports.ii">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="src\user\imports\imports.ii">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

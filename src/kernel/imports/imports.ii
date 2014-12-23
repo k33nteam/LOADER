@@ -1,0 +1,14 @@
+Error	70	error LNK2001: unresolved external symbol _ZwQuerySystemInformation@16	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	60	error LNK2001: unresolved external symbol _DbgPrint	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	59	error LNK2001: unresolved external symbol __imp__RtlInitUnicodeString@8	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	67	error LNK2001: unresolved external symbol __imp__IoQueueWorkItem@16	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	64	error LNK2001: unresolved external symbol __imp__IoGetDeviceObjectPointer@16	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	66	error LNK2001: unresolved external symbol __imp__IoFreeWorkItem@4	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	63	error LNK2001: unresolved external symbol __imp__IoDetachDevice@4	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	65	error LNK2001: unresolved external symbol __imp__IoAllocateWorkItem@4	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	68	error LNK2001: unresolved external symbol __imp_@ObfReferenceObject@4	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	69	error LNK2001: unresolved external symbol __imp_@ObfDereferenceObject@4	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	62	error LNK2001: unresolved external symbol __imp_@IofCallDriver@8	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
+Error	23	error LNK2001: unresolved external symbol __imp__ExFreePoolWithTag@8	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(pool.obj)	cc_shellcode
+Error	22	error LNK2001: unresolved external symbol __imp__ExAllocatePoolWithTag@12	D:\cve\cc-shellcoding\cc_shellcode\libc.lib(pool.obj)	cc_shellcode
+Error	14	error LNK2001: unresolved external symbol _stricmp	D:\cve\cc-shellcoding\cc_shellcode\Gate.obj	cc_shellcode
