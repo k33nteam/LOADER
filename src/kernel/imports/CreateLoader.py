@@ -187,8 +187,8 @@ impasm.close()
 
 importsexports = ""
 for imp in imps_raw:
-    if ("DbgPrint" in imp):
-        imp = "_DbgPrint"
+    if ("DbgPrint" in imp):#exception .. TODO .. haha proper handling on other place ...
+        imp = "DbgPrint"
     importsexports += "%s\n"%imp
 imports = open("../../../../imports.def", "r")
 buff = imports.read()
